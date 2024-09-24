@@ -3,11 +3,14 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-.EasyDoLogo{
-  width: 50px;
-  height: 50px;
+
+/* Logo styling */
+.EasyDoLogo {
+  width: 60px;
+  height: 60px;
   border-radius: 10%;
 }
+
 /* Styling for header */
 header {
   background-color: #fff;
@@ -21,9 +24,11 @@ header {
   right: 0; /* Align to the right */
   z-index: 10;
 }
+
 .main-content {
   padding-top: 70px; /* Adjust this value based on your header height */
 }
+
 /* Logo styling */
 .logo {
   display: flex;
@@ -63,32 +68,42 @@ header {
   display: flex;
 }
 
-/* .nav li a:hover {
-  background-color: #f0f0f0;
-} */
-
+/* Dropdown styling */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color:  #fff;
   padding: 10px;
   z-index: 1;
   white-space: nowrap;
 }
 
+.dropdown-columns {
+  background-color: #fff;
+  display: flex; /* Use flexbox for layout */
+  gap: 30px; /* Space between the columns */
+}
+
+.dropdown-column {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
 .dropdown-content a {
-  display: inline-block;
+
+  display: block; /* Full-width links */
   color: black;
   padding: 12px 16px;
   text-decoration: none;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color:  #e7e1e1;
 }
 
 .nav li:hover .dropdown-content {
-  display: block;
+  display: block; /* Show dropdown on hover */
 }
 
 /* Authentication buttons */
@@ -135,8 +150,8 @@ header {
     top: 100%;
     left: 0;
     width: 100%;
-    /* padding: 10px 0; */
   }
+
   .nav li a {
     text-decoration: none;
     color: #333;
@@ -144,13 +159,11 @@ header {
     justify-content: space-between;
     display: flexbox;
   }
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
+
   .nav li:hover .dropdown-content {
     display: block;
   }
+
   .dropdown-content {
     display: none;
     width: 100%;
@@ -160,13 +173,13 @@ header {
     z-index: 1;
     white-space: nowrap;
   }
+
   .logo {
-    /* display: flex; */
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    /* margin-left: 10px; */
   }
+
   .nav.open ul {
     display: flex;
   }
@@ -177,6 +190,5 @@ header {
 
   .auth-buttons {
     display: flex;
-    
   }
 }

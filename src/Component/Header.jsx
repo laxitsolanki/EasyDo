@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../Component/Heade.css'; // Ensure this path is correct
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo1main.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import LanguageSwitcher from '../ComumComponent/location/LanguageSwitcher'; // Import the LanguageSwitcher
 
 const Header = () => {
@@ -21,16 +23,27 @@ const Header = () => {
       </div>
       <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
         <ul>
+        <li>
+  <a href="#">
+    {t('products')} <FontAwesomeIcon icon={faChevronDown} size="xs" className="fa-sharp fa-thin" />
+  </a>
+  <div className="dropdown-content">
+    <div className="dropdown-columns">
+      <div className="dropdown-column">
+        <a href="#">Product 1</a>
+        <a href="#">Product 2</a>
+        <a href="#">Product 3</a>
+      </div>
+      <div className="dropdown-column">
+        <a href="#">Product 4</a>
+        <a href="#">Product 5</a>
+        <a href="#">Product 6</a>
+      </div>
+    </div>
+  </div>
+</li>
           <li>
-            <a href="#">{t('products')} <i className="fa fa-caret-down"></i></a>
-            <div className="dropdown-content">
-              <a href="#">Product 1</a>
-              <a href="#">Product 2</a>
-              <a href="#">Product 3</a>
-            </div>
-          </li>
-          <li>
-            <a href="#">{t('customers')} <i className="fa fa-caret-down"></i></a>
+            <a href="#">{t('customers')} <FontAwesomeIcon icon={faChevronDown} size="xs" className="fa-sharp fa-thin" /></a>
             <div className="dropdown-content">
               <a href="#">Customer 1</a>
               <a href="#">Customer 2</a>
@@ -39,7 +52,7 @@ const Header = () => {
           </li>
           <li><a href="#">{t('pricing')}</a></li>
           <li>
-            <a href="#">{t('about')} <i className="fa fa-caret-down"></i></a>
+            <a href="#">{t('about')}<FontAwesomeIcon icon={faChevronDown} size="xs" className="fa-sharp fa-thin" /></a>
             <div className="dropdown-content">
               <a href="#">Company</a>
               <a href="#">Team</a>
@@ -47,7 +60,7 @@ const Header = () => {
             </div>
           </li>
           <li>
-            <a href="#">{t('resources')} <i className="fa fa-caret-down"></i></a>
+            <a href="#">{t('resources')}<FontAwesomeIcon icon={faChevronDown} size="xs" className="fa-sharp fa-thin" /></a>
             <div className="dropdown-content">
               <a href="#">Company</a>
               <a href="#">Team</a>

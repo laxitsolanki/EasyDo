@@ -11,6 +11,7 @@ import HrLeade from './HrLeade';
 import AppDevice from './Producttype/AppDevice';
 import CompanyIntro from './CompanyIntro';
 import Hrsmart from './Hrsmart';
+import ScrollToTopButton from '../ComumComponent/location/ScrollToTopButton';
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
 <AppDevice/>
       </div>
       <Footer />
+<ScrollToTopButton/>
     </>
   );
 }

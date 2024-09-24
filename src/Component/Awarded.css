@@ -1,8 +1,8 @@
 .award-container1 {
     background-color:#ffffff; /* Light background color */
     text-align: center; /* Center the content */
-    margin: 10px 0; /* Margin for spacing */
-    padding: 10px; /* Padding for inner spacing */
+    margin: 0px 0; /* Margin for spacing */
+    padding: 15px; /* Padding for inner spacing */
   }
   
   .award-heading1 {
@@ -22,6 +22,6 @@
   .logo-organization1 img  {
     max-height: 70px; /* Limit image height */
     object-fit: contain; /* Maintain aspect ratio */
-    padding-bottom: 15px; /* Space below each image */
+    padding-bottom: 45px; /* Space below each image */
   }
   

@@ -16,7 +16,7 @@ function Organization() {
 
   return (
     <div className="organization-container">
-      <div className="trusted-line">{t('trusted_organizations')}</div>
+      {/* <div className="trusted-line">{t('trusted_organizations')}</div> */}
       <div className="logo-organization">
         <img src={Ebay} alt={t('ebay')} />
         <img src={Oneplus} alt={t('oneplus')} />

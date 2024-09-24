@@ -4,6 +4,8 @@ import '../Component/Heade.css'; // Ensure this path is correct
 import Logo from '../assets/logo1main.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faFileInvoice, faUsers, faUserPlus, faChartLine, faClock, faClipboardList } from '@fortawesome/free-solid-svg-icons'; // Adjust according to your icons
+
 import LanguageSwitcher from '../ComumComponent/location/LanguageSwitcher'; // Import the LanguageSwitcher
 
 const Header = () => {
@@ -30,14 +32,26 @@ const Header = () => {
   <div className="dropdown-content">
     <div className="dropdown-columns">
       <div className="dropdown-column">
-        <a href="#">Product 1</a>
-        <a href="#">Product 2</a>
-        <a href="#">Product 3</a>
+        <a href="#">
+          <FontAwesomeIcon icon={faFileInvoice} className="dropdown-icon" /> Payroll Software
+        </a>
+        <a href="#">
+          <FontAwesomeIcon icon={faUsers} className="dropdown-icon" /> Modern HR
+        </a>
+        <a href="#">
+          <FontAwesomeIcon icon={faUserPlus} className="dropdown-icon" /> Hiring & Onboarding
+        </a>
       </div>
       <div className="dropdown-column">
-        <a href="#">Product 4</a>
-        <a href="#">Product 5</a>
-        <a href="#">Product 6</a>
+        <a href="#">
+          <FontAwesomeIcon icon={faChartLine} className="dropdown-icon" /> Performance
+        </a>
+        <a href="#">
+          <FontAwesomeIcon icon={faClock} className="dropdown-icon" /> Time & Attendance
+        </a>
+        <a href="#">
+          <FontAwesomeIcon icon={faClipboardList} className="dropdown-icon" /> Project timesheet
+        </a>
       </div>
     </div>
   </div>
@@ -45,26 +59,37 @@ const Header = () => {
           <li>
             <a href="#">{t('customers')} <FontAwesomeIcon icon={faChevronDown} size="xs" className="fa-sharp fa-thin" /></a>
             <div className="dropdown-content">
-              <a href="#">Customer 1</a>
-              <a href="#">Customer 2</a>
-              <a href="#">Customer 3</a>
+              <a href="#">Customer Experince</a>
+              <a href="#">Customer Stories</a>
+              <a href="#">Onboarding Support</a>
+              <a href="#">Wall of Love</a>
+              <a href="#">Support</a>
             </div>
           </li>
           <li><a href="#">{t('pricing')}</a></li>
           <li>
             <a href="#">{t('about')}<FontAwesomeIcon icon={faChevronDown} size="xs" className="fa-sharp fa-thin" /></a>
             <div className="dropdown-content">
-              <a href="#">Company</a>
-              <a href="#">Team</a>
-              <a href="#">Careers</a>
+              <a href="#">Our Story</a>
+              <a href="#"> Our Team</a>
+              <a href="#">Contact Us</a>
             </div>
           </li>
           <li>
             <a href="#">{t('resources')}<FontAwesomeIcon icon={faChevronDown} size="xs" className="fa-sharp fa-thin" /></a>
             <div className="dropdown-content">
-              <a href="#">Company</a>
-              <a href="#">Team</a>
-              <a href="#">Careers</a>
+              <a href="#">Blog</a>
+              <a href="#">Glossary</a>
+              <a href="#">HR Toolkit</a>
+              <a href="#">Whitepapper</a>
+              <a href="#">Free Tools</a>
+              <a href="#">Use Cases</a>
+              <a href="#">HR Katalyst report</a>
+              <a href="#">Commics</a>
+              <a href="#">HR Story Book</a>
+              <a href="#">HR Perspective</a>
+              <a href="#">News</a>
+              <a href="#">Envents</a>
             </div>
           </li>
           <li><a href="#">{t('careers')}</a></li>

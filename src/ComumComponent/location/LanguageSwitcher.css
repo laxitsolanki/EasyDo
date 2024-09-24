@@ -1,0 +1,78 @@
+.language-switcher {
+    position: fixed; /* Ensure it's positioned relative to the viewport */
+    top: 20px; /* Adjust as needed */
+    right: 55px; /* Adjust as needed */
+    z-index: 1000; /* High value to ensure it appears above other content */
+    background-color: white; /* Ensure it's visible against other content */
+    margin: 1px;
+    border-radius: 50%; /* Make the container round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    display: inline-block;
+  }
+  
+  /* Style the select element */
+  select {
+    padding: 10px;
+    border-radius: 50%; /* Perfect round shape */
+    border: 2px solid #ccc; /* Thickness and color of the border */
+    background-color: white; /* Background color of the select dropdown */
+    appearance: none; /* Hide the default dropdown arrow */
+    width: 40px; /* Adjust width for a round shape */
+    height: 40px; /* Adjust height for a round shape */
+    text-align: center; /* Center align the text inside the dropdown */
+    font-size: 14px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor to pointer when hovering */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+  }
+  
+  /* Add a custom arrow icon for the select dropdown */
+  select::after {
+    content: '▼'; /* Custom arrow */
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure it doesn't interfere with the select */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .language-switcher {
+      right: 80px; /* Adjust position for smaller screens */
+    }
+  
+    select {
+      width: 35px; /* Adjust width */
+      height: 35px; /* Adjust height */
+      font-size: 12px; /* Smaller font size */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .language-switcher {
+      right: 60px; /* Adjust position for smaller screens */
+    }
+  
+    select {
+      width: 30px; /* Adjust width */
+      height: 30px; /* Adjust height */
+      font-size: 10px; /* Smaller font size */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .language-switcher {
+      right: 20px; /* Adjust position for smaller screens */
+      width: auto; /* Allow width to adjust */
+      height: auto; /* Allow height to adjust */
+      padding: 5px; /* Add padding for better touch area */
+    }
+  
+    select {
+      width: 25px; /* Adjust width */
+      height: 25px; /* Adjust height */
+      font-size: 10px; /* Smaller font size */
+    }
+  }
+  

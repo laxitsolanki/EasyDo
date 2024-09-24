@@ -1,0 +1,82 @@
+/* Main container for the entire layout */
+.mainCompany {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    padding-left: 75px;
+    padding-right: 85px;
+  }
+  
+  /* Styling for the description part */
+  .companyDescription {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .companyDescription h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .companyDescription p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .companyDescription button {
+      background-color: #007bff;
+      padding: 13px 40px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .companyDescription button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the image part */
+  .companySection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .companySection img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 400px;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+  }
+  
+  /* Hover effect on image */
+  .companySection img:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .mainCompany {
+      flex-direction: column;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .companyDescription {
+      margin-bottom: 20px;
+    }
+  
+    .companySection img {
+      width: 100%;
+      max-width: 80%;
+      max-height: none;
+    }
+  }
+  

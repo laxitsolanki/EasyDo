@@ -1,0 +1,203 @@
+html, body, footer {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, Sans-serif;
+    /* background-color:#383b43; */
+  }
+  .main-keka-top{
+display: block !important;
+margin-left: 160px;
+}
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Adjust spacing between icons */
+  }
+  .logohFooter{
+    padding-top: 30px;
+    width: 70px;
+    height: 70px;
+  }
+  .social-icons .fa {
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    font-size: 20px; /* Adjust icon size */
+    margin: 0 3px; /* Space between icons */
+  }
+  
+  .description {
+    color: #ffffff;
+    width: 100%; /* or a specific width, e.g., 600px */
+    font-size: 14px; /* adjust as needed */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.8; /* adjust spacing between lines */
+    white-space: pre-wrap; /* allows wrapping but respects spaces */
+  }
+  .custom-hr {
+    width: 90%;
+    margin-top: 40px;
+    border: none; /* Remove default border */
+    height: 2px; /* Thickness of the line */
+    background-color: #ccc; /* Line color */
+    margin: 40px 20; /* Spacing above and below the line */
+  }
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #383b43;
+    color: #ffff;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .footer-col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 80px;
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .footer .footer-col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  
+  .footer .footer-col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer .footer-col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .footer-col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+  }
+  
+  .footer-col i, .footer .social-icons {
+    font-size: 35px;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  .footer-bottom {
+    color: #ffffff;
+    background-color: #696666;
+    padding: 15px 20px; 
+    text-align: center;
+    font-size: 14px; 
+    display: flex;
+    justify-content: space-evenly;
+    /* border-top: 2px solid #ddd; */
+  }
+  
+  .footer-bottom-links {
+    list-style: none;
+    padding: 0; 
+    margin: 10px 0 0; 
+    display: inline-flex; 
+    gap: 15px; 
+  }
+  .Easydofooter{
+color: #ffffff;
+  }
+  .locations {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 20px; /* Add padding around the container */
+    margin-left: 40px;
+  }
+  
+  .location {
+    margin-right: 20px; /* Space between locations */
+    margin-bottom: 10px; /* Space below each location */
+  }
+  
+  .number {
+    margin-top: 5px; /* Space between the city name and number */
+    font-size: 14px; /* Adjust font size for numbers if needed */
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .footer-container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media only screen and (max-width: 1139px) {
+    .footer-container .social {
+      width: 1000px;
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .footer .footer-col {
+      width: 33%;
+    }
+  
+    .footer .footer-col h1 {
+      font-size: 14px;
+    }
+  
+    .footer .footer-col ul li {
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .footer .footer-col {
+      width: 50%;
+    }
+  
+    .footer .footer-col h1 {
+      font-size: 14px;
+    }
+  
+    .footer .footer-col ul li {
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .footer .footer-col {
+      width: 100%;
+    }
+  }
+  

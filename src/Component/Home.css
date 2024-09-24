@@ -1,0 +1,9 @@
+.main-content {
+     /* Space around the content */
+    /* Adjust height minus header and footer */
+    min-height: auto;
+   background-color:  rgb(255 255 255); /* Light background color for contrast */
+    display: flex; /* Optional: allows for flexbox layout */
+    flex-direction: column; /* Optional: stacks children vertically */
+  }
+  

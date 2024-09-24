@@ -1,0 +1,104 @@
+.industry-cards1 {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.industry-cards1 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.industry-cards1 p {
+  margin-bottom: 20px;
+  font-size: 1.1rem; /* Make font size responsive */
+}
+
+.card-container1 {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: center; /* Center the cards */
+  gap: 20px;
+  border-left: 2px solid rgba(226, 233, 247, 0.6);
+
+}
+.card-container:hover {
+    transform: translateY(-5px); /* Move the card up slightly */
+    box-shadow: 7px 8px 18px rgba(192, 99, 99, 0.1); /* Add shadow on hover */
+  }
+  
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 300px; /* Set max width for uniformity */
+  /* text-align: left; */
+  border-radius: 10px; /* Add rounded corners */
+  background-color: rgb(234, 239, 239);
+  border-color: #bdd3fe;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Elevate card on hover */
+}
+
+.card-icon1 {
+  /* background-color: #dee2ea; */
+  color: #77a7db; /* Change icon color */
+  /* margin-bottom: 15px; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto; /* Center the icon */
+  display: block;
+}
+
+.card h3 {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  margin: 10px 0; /* Adjust margin */
+}
+
+.card p {
+    margin: 24px;
+  margin-bottom: 10px;
+  font-size: 0.9rem; /* Smaller font for better readability */
+}
+
+.card a {
+  display: inline-block;
+  padding: 10px 100px; /* Adjust padding */
+  color: #76b6f2; /* Change text color to white */
+  /* Button color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .industry-cards1 h2 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .card-container1 {
+    gap: 10px; /* Reduce gap on smaller screens */
+  }
+
+  .card {
+    max-width: 90%; /* Use more width on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .industry-cards1 p {
+    font-size: 0.9rem; /* Further adjust paragraph size */
+  }
+
+  .card h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+}

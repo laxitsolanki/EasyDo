@@ -1,0 +1,75 @@
+.card-container {
+  width: 30%; /* Display 3 cards per row */
+  padding: 24px;
+  border-left: 2px solid rgba(226, 233, 247, 0.6);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  border-color: #bdd3fe;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover effect */
+}
+.icon {
+  font-size: 2rem; /* Adjust size to your preference */
+   color: #000;
+}
+
+.card-icon {
+  border-radius: 50%;
+  font-size: 40px; /* Adjust size of the icon */
+  color: #4a90e2; /* Change color if needed */
+}
+.card-container:hover {
+  transform: translateY(-10px); /* Move the card up slightly */
+  box-shadow: 7px 8px 18px rgba(192, 99, 99, 0.1); /* Add shadow on hover */
+}
+
+.imgcardlogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  color: #1a202c;
+  font-weight: 500;
+  margin-bottom: 16px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.card-container:hover .card-title {
+  color: #4a90e2; /* Change title color on hover */
+}
+
+.card-description {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #4a5568;
+}
+
+.card-link {
+  color: #6366f1;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.card-container:hover .card-link {
+  color: #4a90e2; /* Change link color on hover */
+}
+
+.card-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-container {
+    width: 100%; /* Full width for mobile screens */
+  }
+}

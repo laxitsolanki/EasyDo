@@ -1,0 +1,120 @@
+.mainhr {
+  background-color: #f8fafc;
+  text-align: center;
+  padding-bottom: 40px; /* Space below the main heading */
+}
+
+.container1 {
+  margin-left: 50px;
+  padding-bottom: 30px;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Card container */
+.cardSmarthr {
+  display: flex;
+  flex-direction: column;
+  width: 30%; /* Adjust the width of the cards section */
+ /* Allow the card section to grow */
+}
+
+.card {
+  width: 160%;
+  background-color: transparent;
+  padding: 5px;
+  margin: 5px 0; /* Space between cards */
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card:active {
+  background-color: white; /* Change background on click */
+}
+
+/* Slider container */
+.hrslider {
+  margin-right: 50px;
+  flex-grow: 1;
+  max-width: 50%; /* Limit the width of the slider */
+}
+
+.hrslider img {
+  width: 100%; /* Full width of the slider */
+  height: auto; /* Maintain aspect ratio */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; /* Center items on medium screens */
+  }
+
+  .cardSmarthr {
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px; /* Add space below the cards section */
+  }
+
+  .hrslider {
+    max-width: 90%; /* Shrink slider width */
+  }
+}
+
+@media (max-width: 768px) {
+  .container1{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainhr h1 {
+    font-size: 1.8rem; /* Smaller heading on tablets */
+  }
+
+  .card {
+    width: 100%; /* Full width cards on tablets */
+  }
+
+  .hrslider {
+    max-width: 80%; /* Further reduce slider width */
+  }
+}
+
+@media (max-width: 480px) {
+  .container1{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainhr h1 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+  }
+
+  .mainhr p {
+    font-size: 0.9rem; /* Smaller paragraph text on mobile */
+  }
+
+  .cardSmarthr {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .hrslider {
+    max-width: 100%; /* Full width slider for mobile */
+  }
+
+  .card {
+    padding: 10px;
+    margin: 10px 0; /* More space between cards on mobile */
+  }
+}

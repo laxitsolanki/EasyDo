@@ -1,0 +1,23 @@
+.heading-text {
+  margin-left: 5%;
+  text-align: center; /* Center the text */
+  font-size: 2.0rem; /* Increase the font size */
+  font-weight: bold; /* Optional: make the text bold */
+  margin-bottom: 20px; /* Add some space below the text */
+  color: #333; /* Change the color if needed */
+}
+
+.product-container {
+  background-color:#ffffff;
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping to the next line */
+  justify-content: space-between; /* Add space between cards */
+  gap: 20px; /* Add some spacing between the cards */
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .product-container {
+    justify-content: center; /* Center the cards on medium screens */
+  }
+}

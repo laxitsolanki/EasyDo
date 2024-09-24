@@ -1,0 +1,79 @@
+.organization-container {
+    background-color: rgb(238 240 244);
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.trusted-line {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.logo-organization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-organization img {
+    max-height: 50px;
+    object-fit: contain;
+    padding-bottom: 15px;
+    width: auto;
+}
+
+/* Media query for devices with max-width 425px */
+@media (max-width: 425px) {
+    .logo-organization {
+        gap: 15px; /* Adjust gap */
+    }
+    .logo-organization img {
+        max-height: 35px; /* Smaller logos */
+    }
+    .trusted-line {
+        font-size: 20px; /* Adjust text size */
+    }
+}
+
+/* Media query for devices with max-width 375px */
+@media (max-width: 375px) {
+    .logo-organization {
+        gap: 10px; /* Smaller gap */
+    }
+    .logo-organization img {
+        max-height: 35px; /* Smaller logos */
+    }
+    .trusted-line {
+        font-size: 18px; /* Adjust text size */
+    }
+}
+
+/* Media query for extra small devices with max-width 320px */
+@media (max-width: 320px) {
+    .organization-container {
+        padding: 10px 5px; /* Remove extra side padding */
+    }
+    
+    .logo-organization {
+        gap: 5px;
+        flex-direction: column; /* Stack logos vertically */
+        width: 100%;
+    }
+
+    .logo-organization img {
+        max-height: 25px; /* Further reduce logo size */
+    }
+
+    .trusted-line {
+        font-size: 16px; /* Further reduce text size */
+    }
+}
